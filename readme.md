@@ -1,25 +1,27 @@
-Logarithm
-Tree and graph traversal
-Binary search tree
-sliding window
-recursion
-inverting binary tree and reversing the linkedList
-sufix trees (to check first string characters are available in 2nd string)
-binary heaps, min and max heaps (finding smaller/ larger value from a group of values)
-dynamic programming
-sorting (quick, merge sort)
+# DSA
+
+###### Logarithm
+###### Tree and graph traversal
+###### Binary search tree
+###### sliding window
+###### recursion
+###### inverting binary tree and reversing the linkedList
+###### sufix trees (to check first string characters are available in 2nd string)
+###### binary heaps, min and max heaps (finding smaller/ larger value from a group of values)
+###### dynamic programming
+###### sorting (quick, merge sort)
 
 
-Inorder Traversal :
+## Inorder Traversal :
 
-It will first check left. 
+***It will first check left. 
 If (left node is present) {
 	it will add to the stack and it will traverse left;
 } else {
 	it will pop and print value from stack and assign root to right
-}
+}***
 
-
+```
 public void printInorder(Node root) {
 
 Stack<Node> stack = new Stack<>();
@@ -36,7 +38,7 @@ While(stack != null || root != null) {
 }
 
 }
-
+```
 Preorder traversal : 
 
 This can be preferred if you want to get root nodes.
