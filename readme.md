@@ -114,3 +114,40 @@ public int top() {
      }
 }
 ```
+
+## Queue implementation using LinkedList :
+
+```
+class Node {
+	int data;
+	Node next;
+
+	Node(int data) {
+		this.data = data;
+	}
+}
+
+	Node head = null;
+	Node tail = null;
+
+	public void enqueue(int value) {
+		if(head == null) {
+			head = new Node(value);
+			tail = head;
+			tail.next = null;
+		} else {
+			tail.next = new Node(value);
+			tail = tail.next;
+			tail.next = null;
+		}
+	}
+
+	public void dequeue() {
+		if(head == null) {
+			System.out.println("No element is present");
+		} else {
+			System.out.println(head.data);
+			head = head.next;
+		}
+	}
+```
