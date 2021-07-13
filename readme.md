@@ -13,14 +13,10 @@
 
 
 ## Inorder Traversal :
-```
-***It will first check left. 
-If (left node is present) {
-	it will add to the stack and it will traverse left;
-} else {
-	it will pop and print value from stack and assign root to right
+***It will first check left. If (left node is present) then
+   it will add to the stack and it will traverse left.
+   Otherwise it will pop and print value from stack and assign root to right
 }***
-```
 ```
 public void printInorder(Node root) {
   Stack<Node> stack = new Stack<>();
