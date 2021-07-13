@@ -17,6 +17,7 @@
    it will add to the stack and it will traverse left.
    Otherwise it will pop and print value from stack and assign root to right
 }***
+[Inorder Traversal](https://www.youtube.com/watch?v=nzmtCFNae9k)
 ```
 public void printInorder(Node root) {
   Stack<Node> stack = new Stack<>();
@@ -35,6 +36,7 @@ public void printInorder(Node root) {
 ## Preorder traversal : 
 
 ***This can be preferred if you want to get root nodes.***
+[Preorder Traversal](https://www.youtube.com/watch?v=elQcrJrfObg)
 ```
 public void printPreorder(Node root) {
   Stack<Node> stack = new Stack<>();
@@ -54,6 +56,7 @@ public void printPreorder(Node root) {
 ## Postorder traversal : 
 
 ***This can be preferred if you want to get leaf nodes.***
+[Postorder Traversal](https://www.youtube.com/watch?v=qT65HltK2uE)
 ```
 public void printPostorder(Node root) {
   Stack<Node> stack = new Stack<>();
@@ -80,6 +83,7 @@ public void printPostorder(Node root) {
 ```
 ## Queue implementation using stack :
 ***I will have 2 stack. Input and output stack.***
+[Queue impl using stack](https://www.youtube.com/watch?v=3Et9MrMc02A)
 ```
 Stack<Integer> input = new Stack<>();
 Stack<Integer> output = new Stack<>();
