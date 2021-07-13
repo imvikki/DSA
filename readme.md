@@ -151,3 +151,29 @@ public int top() {
 	}
 
 ```
+## Queue implementation using ArrayList :
+```
+	private int[] queue = new int[10];
+	int front = -1;
+	int rear = -1;
+	
+	public void enqueue(int value) {
+		if(front == -1) {
+			front++;
+		}
+		if(rear == queue.length - 1) {
+			System.out.println("Queue is full");
+		} else {
+			queue[++rear] = value;
+		}
+	}
+
+	public void dequeue() {
+		if(front == -1 || front > rear) {
+			System.out.println("Queue is empty");
+		} else {
+			System.out.println(queue[front]);
+			front++;
+		}
+	}
+```
