@@ -42,14 +42,14 @@ public void printPreorder(Node root) {
   Stack<Node> stack = new Stack<>();
   stack.push(root);
 	While(stack != null) {
-		root = stack.pop();
-		System.out.println(root.data);
-		if(root.right != null) {	
-			stack.push(root.right);
-		} 
-		if(root.left) {
-			stack.push(root.left);
-		}	
+	     root = stack.pop();
+	     System.out.println(root.data);
+	     if(root.right != null) {	
+	        stack.push(root.right);
+	     } 
+	     if(root.left) {
+	        stack.push(root.left);
+	     }	
 	}
 }
 ```
@@ -63,20 +63,20 @@ public void printPostorder(Node root) {
   Node current = root;
 	While(stack != null || current != null) {
 		if(current != null) {
-			stack.push(current);
-		current = current.left;
+		     stack.push(current);
+		     current = current.left;
 		} else {
-			Node temp = stack.peek().right();
-			if(temp == null) {
+		     Node temp = stack.peek().right();
+		     if(temp == null) {
+			temp = stack.pop();
+			System.out.println(temp.data);
+			while(stack != null && temp == stack.peek().right()) {
 				temp = stack.pop();
 				System.out.println(temp.data);
-				while(stack != null && temp == stack.peek().right()) {
-					temp = stack.pop();
-					System.out.println(temp.data);
-				}
-			} else {
-				current = temp;
 			}
+		     } else {
+			current = temp;
+		     }
 		}
 	}
 }
