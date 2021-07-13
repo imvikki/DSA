@@ -118,14 +118,15 @@ public int top() {
 ## Queue implementation using LinkedList :
 
 ```
-class Node {
-	int data;
-	Node next;
+	class Node {
+		int data;
+		Node next;
 
-	Node(int data) {
-		this.data = data;
+		Node(int data) {
+			this.data = data;
+			this.next = null;
+		}
 	}
-}
 
 	Node head = null;
 	Node tail = null;
@@ -134,11 +135,9 @@ class Node {
 		if(head == null) {
 			head = new Node(value);
 			tail = head;
-			tail.next = null;
 		} else {
 			tail.next = new Node(value);
 			tail = tail.next;
-			tail.next = null;
 		}
 	}
 
@@ -150,4 +149,5 @@ class Node {
 			head = head.next;
 		}
 	}
+
 ```
