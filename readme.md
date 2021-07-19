@@ -179,3 +179,35 @@ public int top() {
 		}
 	}
 ```
+## DFS
+```
+public static void main(String[] args) {
+		List<String> result = new ArrayList<>();
+		String digits = "223";
+		String map[] = {"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
+		dfs(digits, map, result, new StringBuilder(), 0);
+		result.stream().forEach(System.out::println);
+	}
+
+public static void dfs(String digits, String[] map, List<String> result, StringBuilder sb, int index) {
+		if(index == digits.length()) {
+			result.add(sb.toString());
+			System.out.println("result :: " + result);
+			return;
+		}
+		
+		int digit = Character.getNumericValue(digits.charAt(index));
+		System.out.println("digit :: " + digit);
+		String letters = map[digit];
+		System.out.println("letters :: " + letters);
+		for(int i = 0; i < letters.length(); i++) {
+			System.out.println("i :: " + i);
+			char ch = letters.charAt(i);
+			System.out.println("ch :: " + ch);
+			sb.append(ch);
+			dfs(digits, map, result, sb, index + 1);
+			System.out.println("sb.length() :: " + sb.length());
+			sb.deleteCharAt(sb.length() - 1);
+		}
+	}
+```
