@@ -19,19 +19,21 @@
 }***
 [Inorder Traversal](https://www.youtube.com/watch?v=nzmtCFNae9k)
 ```
-public void printInorder(Node root) {
-  Stack<Node> stack = new Stack<>();
-	While(stack != null || root != null) {
-	    if(root != null) {
-		stack.push(root);
-		root = root.left;
-	    } else {
-		root = stack.pop();
-		System.out.println(root.data);
-		root = root.right;
-	    }
-	}
-}
+ public List<Integer> inorderTraversal(TreeNode root) {
+        List<Integer> results = new ArrayList<>();
+        Stack<TreeNode> stack = new Stack<>();
+        while(root != null || !stack.isEmpty()) {
+            if(root != null) {
+                stack.push(root);
+                root = root.left;
+            } else {
+                root = stack.pop();
+                results.add(root.val);
+                root = root.right;
+            }
+        }
+        return results;
+    }
 ```
 ## Preorder traversal : 
 
