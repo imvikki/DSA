@@ -9,7 +9,7 @@
 ###### sufix trees (to check first string characters are available in 2nd string)
 ###### binary heaps, min and max heaps (finding smaller/ larger value from a group of values)
 ###### dynamic programming
-###### sorting (quick, merge sort)
+###### sorting (quick and merge sort)
 
 
 ## Inorder Traversal :
