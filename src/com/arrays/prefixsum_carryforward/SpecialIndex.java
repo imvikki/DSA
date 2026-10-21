@@ -1,4 +1,4 @@
-package com.arrays.prefixsum;
+package com.arrays.prefixsum_carryforward;
 
 
 /*Given an array, arr[] of size N, the task is to find the count of array indices such that removing an element

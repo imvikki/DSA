@@ -1,4 +1,4 @@
-package com.arrays.prefixsum;
+package com.arrays.prefixsum_carryforward;
 
 import java.util.ArrayList;
 import java.util.List;

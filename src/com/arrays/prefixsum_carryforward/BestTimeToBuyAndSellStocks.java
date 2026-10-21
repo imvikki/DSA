@@ -1,4 +1,4 @@
-package com.arrays.prefixsum;
+package com.arrays.prefixsum_carryforward;
 
 public class BestTimeToBuyAndSellStocks {
 

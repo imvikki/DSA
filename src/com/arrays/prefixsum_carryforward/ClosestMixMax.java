@@ -1,4 +1,4 @@
-package com.arrays.prefixsum;
+package com.arrays.prefixsum_carryforward;
 
 /*
 Given an array A, find the size of the smallest subarray such that it contains at least one occurrence of the maximum value of the array
